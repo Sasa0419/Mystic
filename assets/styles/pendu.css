@@ -1,0 +1,356 @@
+@font-face {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+.dashes {
+    color: #000;
+    padding: 2%;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: -3px;
+    color: #000;
+}
+
+body {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/vert/back1.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.container {
+    font-size: 16px;
+    width: 40%;
+    height: 45%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    padding: 3%;
+    background-color: #060505;
+    color: #fff;
+    border-radius: 0.6em;
+    border: groove 3px grey;
+    box-shadow: 15px 15px 15px black;
+    animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0px #ffff00;
+    }
+
+    50% {
+        box-shadow: 0 0 30px #ffff00;
+    }
+
+    100% {
+        box-shadow: 0 0 0px #ffff00;
+    }
+}
+
+
+.score {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(251, 255, 0);
+    box-shadow: 5px 5px 5px 5px rgb(251, 255, 0);
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+#options-container {
+    text-align: center;
+    padding: 10px;
+
+}
+
+#options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em 0;
+    color: #ffffff;
+
+}
+
+#options-container button {
+    padding: 0.6em 1.2em;
+    border: 3px solid #000000;
+    background-color: darkgray;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 0.5em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#options-container button:disabled {
+    border: 3px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+}
+
+#options-container button.active {
+    background-color: #0800f5;
+    border: 3px solid #000000;
+    color: #fff;
+}
+
+.letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+    color: #ffffff;
+
+}
+
+#letter-container button {
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.new-game-popup {
+    background-color: #0800f5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6em;
+    color: #ffffff;
+}
+
+#user-input-section {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0.6em 0 1.2em 0;
+
+    background-color: #ffffff;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    border: 10px solid #0800f5;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.hide {
+    display: none;
+    color: #ffffff;
+}
+
+
+
+.display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: blue;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+
+}
+
+.p {
+    float: left;
+    font-size: 23px;
+    margin-top: 7px;
+    margin-left: 11px;
+    color: white;
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+
+}
+
+.btn1 {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 4.5px;
+    padding-bottom: 10px;
+    margin-right: 4px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+
+}
+
+.test-event:hover {
+    background-color: #ff0000
+}
+
+.test-eventt:hover {
+    background-color: darkgray
+}
+
+
+/* navbar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-left: 40px;
+}
+
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 15px;
+    /* Espace entre le bouton de déconnexion et l'image du profil */
+    width: 100px;
+    height: max-content;
+    padding: 5px 16px;
+    font-size: 17px;
+    background: black;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    margin-right: 15px;
+
+
+
+}
+
+
+/*responsive*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    .container {
+
+        width: 80vw;
+    }
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+   
+    .container {
+
+        width: 60%;
+        padding: 50px;
+    }
+
+    #user-input-section {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        background-color: #ffffff;
+    }
+
+    canvas {
+
+        width: 80%;
+    }
+   
+
+    #options-container button {
+     
+        font-size: 0.6rem;
+        margin: 3rem auto;
+        margin-top: -1.5rem;
+        padding: 8px;
+    }
+
+    .letter-container {
+        margin-top: -5rem;
+        gap: 0;
+    }
+
+    .display button {
+        font-size: 1rem;
+    }
+  
+    .dashes{
+        font-size: 1rem;
+    }
+
+
+    .btn1 {
+        width: 10%;
+        height: 1.5rem;
+        padding: 1px;
+
+    }
+
+    .score{
+
+        width: 40%;
+        height: auto;
+        font-size: 1.2rem;
+    }
+}

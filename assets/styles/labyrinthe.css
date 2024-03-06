@@ -1,0 +1,360 @@
+
+@font-face {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+body {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    color: #fff;
+    background-image: url('../img/vert/back1.jpg');
+    z-index: 1;
+}
+
+.score {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(251, 255, 0);
+    box-shadow: 5px 5px 5px 5px rgb(251, 255, 0);
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+/* nav */
+nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.ensemble {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 15px;
+    /* Espace entre le bouton de déconnexion et l'image du profil */
+    width: 100px;
+    height: max-content;
+    padding: 5px 16px;
+    font-size: 17px;
+    background: black;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+/*Div jeux*/
+
+.fenetre {
+    font-size: 16px;
+    width: 40%;
+    height: 45%;
+    margin-top: -34px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    padding: 3%;
+    background-color: #060505;
+    border-radius: 0.6em;
+    border: groove 3px grey;
+    box-shadow: 15px 15px 15px black;
+    animation: glowing 1500ms infinite;
+}
+
+.btn1 {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 4.5px;
+    padding-bottom: 10px;
+    margin-right: 4px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+
+.display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: blue;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+.ligne {
+    display: flex;
+    justify-content: center;
+
+}
+
+.test-event:hover {
+    background-color: #ff0000
+}
+
+.test-eventt:hover {
+    background-color: darkgray
+}
+
+.p {
+    float: left;
+    font-size: 23px;
+    margin-top: 7px;
+    margin-left: 11px;
+    color: white;
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0px #ffff00;
+    }
+
+    50% {
+        box-shadow: 0 0 30px #ffff00;
+    }
+
+    100% {
+        box-shadow: 0 0 0px #ffff00;
+    }
+}
+
+
+/*labyrinthe*/
+
+#laby {
+
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    position: relative;
+    padding-right: 45%;
+
+}
+
+
+.clavier {
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    position: fixed;
+
+
+}
+
+
+
+.buttons {
+    width: 210px;
+    height: 160px;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 70px 70px;
+    grid-template-columns: 70px 70px 70px;
+
+}
+
+.btnn {
+    width: 75%;
+    height: 75%;
+    border: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    border-radius: 8px;
+    display: grid;
+
+
+}
+
+.chevron {
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    justify-self: center;
+    color: #222;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#bu {
+    grid-column-start: 2;
+}
+
+#bd {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#bl {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#br {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+#thingie,
+#home {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.emo {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: left;
+}
+
+.barrier {
+    position: absolute;
+    background: #fff;
+}
+
+#top {
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    height: 2px;
+}
+
+#bottom {
+    top: 220px;
+    left: 20px;
+    width: 302px;
+    height: 2px;
+}
+
+
+
+
+/*responsive*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 80vw;
+    }
+
+    #laby {
+        padding-right: 40%;
+        margin-top: 2%;
+
+    }
+
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+    .container {
+        margin: 0 auto;
+        width: 90vw;
+        height: 50vh;
+
+    }
+
+    #laby {
+        padding-right: 21.5rem;
+        margin-top: 1.5rem;
+
+    }
+
+    .btnn {
+
+        width: 40%;
+        height: 40%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .buttons {
+        width: 150px;
+        height: 130px;
+        align-self: center;
+        justify-self: center;
+        display: grid;
+        grid-template-rows: px 100px;
+        grid-template-columns: 50px 50px 50px;
+
+    }
+
+    .score {
+
+        width: 40%;
+        height: auto;
+        font-size: 1.2rem;
+    }
+
+}

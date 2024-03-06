@@ -1,0 +1,46 @@
+b*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+.contenair-question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Question {
+    background-color: black;
+    font-size: 1.6rem;
+}
+
+.reponse {
+    width: 200px;
+    height: 40px;
+}
+
+.envoyer {
+    background: blue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    text-transform: uppercase;
+}
+
+
+.envoyer:hover {
+    background-color: rgb(0, 0, 161);
+}

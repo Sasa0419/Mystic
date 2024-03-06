@@ -1,0 +1,535 @@
+b*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+body {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    color: #fff;
+    background-image: url('../img/vert/back1.jpg');
+    z-index: 1;
+}
+
+.score {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(251, 255, 0);
+    box-shadow: 5px 5px 5px 5px rgb(251, 255, 0);
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* nav */
+nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.ensemble {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 15px;
+    /* Espace entre le bouton de déconnexion et l'image du profil */
+    width: 100px;
+    height: max-content;
+    padding: 5px 16px;
+    font-size: 17px;
+    background: black;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*fenetre windows*/
+
+.fenetre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    align-items: center;
+    width: 750px;
+    height: 400px;
+    margin: 2rem;
+    background-color: #060505;
+    border: groove 3px grey;
+    animation: glowing 1500ms infinite;
+}
+
+.btn1 {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 4.5px;
+    padding-bottom: 10px;
+    margin-right: 4px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+
+.display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: blue;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+.ligne {
+    display: flex;
+    justify-content: center;
+
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0px #ffff00;
+    }
+
+    50% {
+        box-shadow: 0 0 30px #ffff00;
+    }
+
+    100% {
+        box-shadow: 0 0 0px #ffff00;
+    }
+}
+
+
+.test-event:hover {
+    background-color: #ff0000
+}
+
+.test-eventt:hover {
+    background-color: darkgray
+}
+
+.p {
+    float: left;
+    font-size: 23px;
+    margin-top: 7px;
+    margin-left: 11px;
+    color: white;
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+
+
+/*enigme*/
+input {
+    width: 40%;
+    font-size: larger;
+    margin: 1rem auto;
+    /* Espacement vertical uniforme */
+    display: block;
+    text-align: center;
+}
+
+
+
+.verifier {
+    background: blue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    width: 25%;
+    text-transform: uppercase;
+}
+
+
+.verifier:hover {
+    background-color: rgb(0, 0, 161);
+}
+
+.enigme {
+    font-size: 1.6rem;
+    margin-left: 35px;
+}
+
+
+/*bandersnatch*/
+
+.reponse {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+
+
+}
+
+#choix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20rem;
+
+}
+
+#choix button {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    font-size: 1rem;
+    width: 100%;
+    padding: 5px;
+    margin: 1rem;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+
+#choix button:hover {
+    background-color: rgb(0, 0, 161);
+}
+
+/*QR*/
+
+
+.QR img {
+    width: 200px;
+    /* margin-top: 1rem; */
+}
+
+#reponseUtilisateur {
+    width: 25%;
+}
+
+/*binaire*/
+.binaire {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    align-items: center;
+    width: 750px;
+    height: 400px;
+    margin: 2rem;
+    background-color: #060505;
+    border: groove 3px grey;
+    animation: glowing 1500ms infinite;
+}
+
+.binaire #reponseUtilisateur {
+    width: 20rem;
+
+}
+
+
+/* bouton impossible */
+
+#evil-button {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+
+/* mp4 */
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/*calculatrice */
+
+#main {
+    height: 60vh;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: rgba(1, 13, 247, 0.425);
+    overflow: hidden;
+    border: groove rgb(187, 247, 8);
+
+}
+
+#display {
+    margin-top: -40px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(9, 21, 255, 0.52);
+}
+
+#result {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#number {
+    width: 59.5%;
+    float: left;
+}
+
+#operator {
+    width: 39.5%;
+    float: right;
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+
+}
+
+#content-bis {
+    padding-top: 20px;
+}
+
+
+
+.btn-chiffre,
+.btn-chiffre-0 {
+    margin-top: 10px;
+    height: 100px;
+    width: 75px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: linear-gradient(1deg, rgb(187, 247, 8), rgb(3, 254, 3));
+}
+
+.btn-chiffre-0 {
+    width: 100%;
+}
+
+.btn-op {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 40px;
+    background: linear-gradient(1deg, rgb(187, 247, 8), rgb(3, 254, 3));
+    margin-bottom: 10px;
+}
+
+.btn-chiffre:hover,
+.btn-chiffre-0:hover,
+.btn-op:hover {
+    background: linear-gradient(1deg, rgb(187, 247, 8), rgb(3, 254, 3));
+    color: white;
+
+}
+
+.guess-contenair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.guess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    padding: 25px;
+    width: 750px;
+    height: 1px;
+    background-color: #060505;
+    border: groove 3px rgb(7, 3, 254);
+    animation: glowing 1500ms infinite;
+}
+
+
+/*responsive*/
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    /*enigme*/
+    .fenetre {
+        width: 85vw;
+        height: 45vh;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+
+    .btn1 {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+
+    }
+
+    .verifier {
+        width: 50%;
+
+        font-size: 16px;
+    }
+
+    .enigme {
+        font-size: 1.1rem;
+        margin: 0 auto;
+        text-align: center;
+
+
+    }
+
+    input {
+        width: 70%;
+    }
+
+    /*bandersnatch*/
+    .question {
+
+        font-size: 1.1rem;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    #choix {
+
+        width: 0 auto;
+
+
+    }
+
+    #choix button {
+
+        font-size: 0.8rem;
+        margin: 5px;
+
+
+    }
+
+
+    /*QR*/
+    .QR img {
+        width: 130px;
+        margin-top: 1rem;
+
+    }
+
+    #reponseUtilisateur {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    /*binaire*/
+    .binaire {
+        width: 85vw;
+        height: 45vh;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+
+    .binaire #reponseUtilisateur {
+        width: 15rem;
+        font-size: large;
+
+    }
+
+    .score {
+
+        width: 40%;
+        height: auto;
+        font-size: 1.2rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .fenetre {
+        width: 100%;
+        height: 40vh;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+
+
+    .btn1 {
+        float: right;
+
+    }
+
+    .verifier {
+        width: 20%;
+    }
+
+
+}

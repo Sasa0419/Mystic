@@ -1,0 +1,286 @@
+b*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+body {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    background-image: url('../img/red/red.jpg');
+    color: #fff;
+    z-index: 1;
+}
+
+
+/* nav */
+nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px ;
+    margin-right: 40px;
+}
+
+.ensemble {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 15px; /* Espace entre le bouton de déconnexion et l'image du profil */
+    width: 100px;
+    height: max-content;
+    padding: 5px 16px;
+    font-size: 17px;
+    background: black;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 30px ;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.areyou {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-top: -15px;
+
+
+}
+
+
+.ligne {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fenetre {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 550px;
+    height: 300px;
+    margin: 2rem;
+    background-color: #c0c0c0;
+    border: groove 3px grey;
+    animation: glowing 1500ms infinite;
+}
+
+
+  
+  
+@keyframes glowing {
+    0% { box-shadow: 0 0 3px #FF0000; }
+    50% { box-shadow: 0 0 30px #FF0000; }
+    100% { box-shadow: 0 0 3px #FF0000; }
+  }
+
+
+.vert{
+ display: flex;
+ flex-direction: row; 
+ justify-content: center; 
+ align-items: center; 
+  }
+
+.display {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 30px; 
+    background-color: blue;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+
+#bouton1{ 
+    margin: 25px;
+    width: 100px;
+    height:60%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#bouton2{ 
+    margin: 25px;
+    width: 100px;
+    height:60%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+#bouton3{ 
+    margin: 25px;
+    width: 100px;
+    height:60%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+#bouton4{ 
+    margin: 25px;
+    width: 100px;
+    height:60%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+#bouton5{ 
+    margin: 25px;
+    width: 100px;
+    height:60%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+#bouton6{ 
+    margin: 25px;
+    width: 100px;
+    height:60%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+#bouton7{ 
+    margin: 25px;
+    width: 100px;
+    height:60%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#bouton8{ 
+    margin: 25px;
+    width: 100px;
+    height:60%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+    .btn1{
+        float: right;
+        height: 20px;
+        width: 20px;
+        margin-top: 4.5px;
+        padding-bottom: 10px;
+        margin-right: 4px;
+        font-size: 13px;
+        text-align: center;
+        box-shadow: 1px 1px 1px black;
+        border-radius: 0px;
+        font-family: "W95FA";
+        src: url("W95FA.otf");
+
+    }
+
+    p{
+        float: left;
+        font-size: 14px;
+        margin-top: 7px;
+        margin-left: 11px;
+        color: white;
+        font-family: "W95FA";
+        src: url("W95FA.otf");
+
+    }
+    .test-event:hover{
+        background-color: #FF0000
+    }
+    .test-eventt:hover{
+        background-color: darkgray
+    }
+
+    @media (max-width: 480px) {
+        .fenetre {
+            width: 100vw;
+            height: 20vh;
+            margin: 0.5rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    
+        .areyou {
+            font-size: 1.5rem;
+            margin-top: -10px;
+        }
+    
+        .btn {
+            width: 60px;
+            height: 30px;
+            font-size: 12px;
+        }
+    
+        .btn1 {
+            width: 12px;
+            height: 12px;
+            font-size: 8px;
+        }
+    }

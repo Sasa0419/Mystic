@@ -1,0 +1,242 @@
+b*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+}
+
+body {
+    font-family: "courier";
+    src: url(../font/cour.ttf);
+    color: #fff;
+    background-image: url('../img/vert/back1.jpg');
+    z-index: 1;
+}
+
+.score {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(251, 255, 0);
+    box-shadow: 5px 5px 5px 5px rgb(251, 255, 0);
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* nav */
+nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.ensemble {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 15px;
+    /* Espace entre le bouton de déconnexion et l'image du profil */
+    width: 100px;
+    height: max-content;
+    padding: 5px 16px;
+    font-size: 17px;
+    background: black;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    font-family: "courier";
+    font-size: 4rem;
+}
+
+
+/* section*/
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 115px;
+
+}
+
+
+/*fenetre windows*/
+.ligne {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0px #ff0000;
+    }
+
+    50% {
+        box-shadow: 0 0 50px #ff0000;
+    }
+
+    100% {
+        box-shadow: 0 0 0px #ff0000;
+    }
+}
+
+.fenetre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    align-items: center;
+    width: 40vw;
+    height: 40vh;
+    background-color: #060505;
+    border: groove 3px grey;
+    animation: glowing 1500ms infinite;
+}
+
+.display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: blue;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+.test-event:hover {
+    background-color: #ff0000;
+}
+
+.test-eventt:hover {
+    background-color: darkgray;
+}
+
+.btn1 {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 4.5px;
+    padding-bottom: 10px;
+    margin-right: 4px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 0px;
+    font-family: "courier";
+}
+
+p {
+    font-size: 2.2rem;
+    font-family: "courier";
+}
+
+/* TOPjoueur */
+
+#top {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    width: 15%;
+    height: 25%;
+    position: relative;
+    top: -50%;
+    float: right;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+h2 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+    color: black;
+}
+
+thead {
+    background-color: #838383;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td img {
+    max-width: 30px;
+    height: auto;
+    border-radius: 50%;
+}
